@@ -1,0 +1,23 @@
+.hero{
+    padding: 74px 16px 0 ;
+    &__image{
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        box-sizing:content-box;
+        border: 16px solid #f6f9fd;
+    }
+    &__image--container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__header{
+        font-size: 27px;
+        line-height: 35px;
+        text-align: center;
+    }
+    &__hello{
+        display: none;
+    }
+}

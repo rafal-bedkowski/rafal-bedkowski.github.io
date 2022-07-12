@@ -1,0 +1,17 @@
+.hero{
+    padding: 74px 0 0 0;
+    &__image{
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        box-sizing:content-box;
+    }
+    &__image--container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__hello{
+        display: none;
+    }
+}
