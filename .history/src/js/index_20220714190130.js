@@ -1,6 +1,6 @@
 import "../scss/main.scss";
 
-console.log("Hi, I'm Rafal - nice to meet You 🚀");
+console.log("Hi, I'm Rafal - welcome to my portfolio webpage 🚀");
 
 fetch(
   "https://api.github.com/users/rafal-bedkowski/repos?sort=created&direction=asc"

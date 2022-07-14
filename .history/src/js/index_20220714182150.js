@@ -1,13 +1,14 @@
 import "../scss/main.scss";
+import "../pages"
 
-console.log("Hi, I'm Rafal - nice to meet You 🚀");
+console.log("HELLO 🚀");
 
 fetch(
   "https://api.github.com/users/rafal-bedkowski/repos?sort=created&direction=asc"
 )
   .then((res) => res.json())
   .then((res) => {
-    const container = document.querySelector('.projects-grid--js');
+    const container = document.querySelector("projects-grid--js");
     for (let repo of res) {
       const { description, homepage, html_url, name } = repo;
 
@@ -18,47 +19,40 @@ fetch(
           <span class="project__circle"></span>
         </div>
         <div class="project__content">
-          <img src="img/Github Icon.svg" alt="" />
+          <img src="../assets/img/Github Icon.svg" alt="" />
           <h3 class="project__grid project__title">
-            <span class="project__label">project:</span>
-            <span>${name}</span>
+            <span class="project__label">project: </span>${name}<span
+            ></span>
           </h3>
           <p class="project__grid project__grid--description">
-            <span class="project__label">description:</span>
-            <span>${description}</span>
+            <span class="project__label">descritpion: </span
+            ><span>${description}</span>
           </p>
-          <p class="project__grid">
-            <span class="project__label">demo:</span>
-            <span>
-              &lt;<a
-                target="_blank"
-                rel="noopener noreferrer"
+          <p class="project__grid ">
+            <span class="project__label">demo: </span
+            ><span
+              >&lt;<a
                 class="project__link"
                 href="${homepage}"
                 title="${name} - demo"
                 >see_here</a
-              >&gt;
-            </span>
+              >&gt;</span
+            >
           </p>
-          <p class="project__grid">
-            <span class="project__label">github:</span>
-            <span>
-              &lt;<a
-                target="_blank"
-                rel="noopener noreferrer"
+          <p class="project__grid ">
+            <span class="project__label">github: </span
+            ><span
+              >&lt;<a
                 class="project__link"
                 href="${html_url}"
                 title="${name} - code"
                 >source_code</a
-              >&gt;
-            </span>
+              >&gt;</span
+            >
           </p>
         </div>
       </article>`;
-
-      if (true) {
-        container.innerHTML += template;
-      }
+      container.innerHTML += template;
     }
   })
   .catch((e) => console.log(e));

@@ -1,13 +1,13 @@
 import "../scss/main.scss";
 
-console.log("Hi, I'm Rafal - nice to meet You 🚀");
+console.log("Hi, I'm Rafal - welcome to my portfolio webpage 🚀");
 
 fetch(
   "https://api.github.com/users/rafal-bedkowski/repos?sort=created&direction=asc"
 )
   .then((res) => res.json())
   .then((res) => {
-    const container = document.querySelector('.projects-grid--js');
+    const container = document.querySelector(".projects-grid--js");
     for (let repo of res) {
       const { description, homepage, html_url, name } = repo;
 
@@ -18,7 +18,7 @@ fetch(
           <span class="project__circle"></span>
         </div>
         <div class="project__content">
-          <img src="img/Github Icon.svg" alt="" />
+          <img src="img/github.svg" alt="" />
           <h3 class="project__grid project__title">
             <span class="project__label">project:</span>
             <span>${name}</span>
@@ -56,7 +56,7 @@ fetch(
         </div>
       </article>`;
 
-      if (true) {
+      if (description) {
         container.innerHTML += template;
       }
     }
