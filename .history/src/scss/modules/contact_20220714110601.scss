@@ -8,10 +8,6 @@
         font-size: 16px;
         line-height: 32px;
         text-align: center;
-        @media (min-width: $desktop){
-            font-size: 20px;
-            line-height: 40px;
-        }
     }
 
     &__header {
@@ -26,13 +22,6 @@
     }
     &__link{
         text-align: center;
-        @media (min-width: $desktop){
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 580px;
-            margin: 128px auto 0;
-        }
     }
     &__mail {
         border-radius: 64px;
