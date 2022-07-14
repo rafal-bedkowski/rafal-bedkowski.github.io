@@ -108,8 +108,6 @@
     display: grid;
     column-gap: 24px;
     row-gap: 24px;
-    max-width: 1184px;
-    margin: 0 auto;
     @media (min-width:$tablet){
         grid-template-columns: 1fr 1fr;
     }
