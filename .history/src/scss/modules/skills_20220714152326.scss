@@ -86,3 +86,13 @@
     }
 }
 
+.skills__columns{
+    @media  (min-width: 1920px){
+        max-width: 1894px;
+        justify-content: center;
+        align-items: center;
+    }
+    @media (min-width: 3840px){
+        max-width: 3810px;
+    }
+}

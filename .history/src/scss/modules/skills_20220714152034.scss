@@ -32,9 +32,12 @@
     font-style: normal;
     margin: 0 auto;
     list-style-type: none;
-   
-
-    
+    @media  (min-width: 1920px){
+        max-width: 1894px;;
+    }
+    @media (min-width: 3840px){
+        max-width: 3810px;;
+    }
 
     &__item {
         padding: 0 0 0 24px;
@@ -85,4 +88,3 @@
         margin: 16px 0 24px;
     }
 }
-

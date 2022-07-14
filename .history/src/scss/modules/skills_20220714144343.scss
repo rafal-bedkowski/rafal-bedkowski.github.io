@@ -18,23 +18,19 @@
             font-size: 48px;
             line-height: 56px;
             max-width: 1184px;
-            margin: 0 auto 84px;
+            margin-bottom: 64px;;
         }
-        
     }
 }
 
 
 .skills--list {
-    padding: 0;
     width: 288px;
+
     color: $lighterBlue;
     font-style: normal;
     margin: 0 auto;
     list-style-type: none;
-   
-
-    
 
     &__item {
         padding: 0 0 0 24px;
@@ -85,4 +81,3 @@
         margin: 16px 0 24px;
     }
 }
-
