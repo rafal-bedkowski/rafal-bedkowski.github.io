@@ -1,5 +1,3 @@
-![cover](https://rafal-bedkowski.github.io/og-wtf.png)
-
 # Rafal Bedkowski - Junior Front
 
 Portfolio page, responsive and connected to GitHub API, to show my current projects.
